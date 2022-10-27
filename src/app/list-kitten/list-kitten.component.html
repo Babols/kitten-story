@@ -5,7 +5,7 @@
         <p [ngClass]="kitty.display ? 'show' : 'noShow'">
             {{ kitty.name }} {{ kitty.race }} {{ kitty.birthday }}
         </p>
-        <img [ngClass]="kitty.display ? 'noShow' : 'show'" (mouseenter)="getIn(i)" (mouseleave)="getOut(i)" src="{{ kitty.photo }}" width=" 300px " />
+        <img src="{{ kitty.photo }}" width=" 300px " />
     </div>
         <button type="button " (click)="removeKitten(kitty, i) ">Adopte moi</button>
     </li>
